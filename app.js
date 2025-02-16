@@ -1,8 +1,3 @@
-// El principal objetivo de este desafío es fortalecer 
-// tus habilidades en lógica de programación. 
-// Aquí deberás desarrollar la lógica para resolver el problema.
-
-//h1  'Amigo Secreto'   
 let tablaAmigos = [];
 
 //Titulo y Sub-titulo de la Página.
@@ -38,7 +33,7 @@ function agreganEnLista(){
     });
 }
 
-//BOtton btnSortear; SOrteo segun randon, eligiendo la tabla segun random.
+//Botton btnSortear; SOrteo segun randon, eligiendo la tabla segun random.
 function sortearAmigo() {
     if (tablaAmigos.length === 0){
         alert("No hay amigos ingresados para sortear.");}
