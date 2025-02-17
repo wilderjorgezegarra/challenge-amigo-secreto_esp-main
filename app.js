@@ -43,9 +43,9 @@ function sortearAmigo() {
         const elegido = document.getElementById("resultado");
         console.log("aleatorio",aleatorio);
         console.log("sorteado:",sorteado);        
-        console.log("elegido",elegido);
+        console.log("elegido",elegido);        
         elegido.innerHTML = sorteado;
-        elegido.innerHTML = `<li>${sorteado}<li/>`;
+        elegido.innerHTML = `<li>Amigo Secreto sorteado es: ${sorteado}<li/>`;
         }
     return;
 }
