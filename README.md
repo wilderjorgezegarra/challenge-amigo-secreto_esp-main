@@ -1,13 +1,24 @@
-<em> ## Descripción de su proyecto: Challenge Amigo secreto. </em>
-<h1 align="center"> Su título aquí </h1>
+<h1 align="center"> Challenge Amigo secreto </h1>
 
-a.- Agregar nombre de amigos a una lista-Array.
+<em> ## Descripción de su proyecto: Challenge Amigo secreto </em>
+
+
 b.- Visualizar los nombres ingresados de la lista.
-c.- Al realizar el sorteo, se genera un numero aleatorio y este elige el amigo sorteado, mostrandolo en la pantalla.
+c.- Al realizar el sorteo, se genera un numero aleatorio y este elige el amigo sorteado, mostrándolo en la pantalla.
 
 ## Funcionalidades
 
-Cómo pueden usarlo los usuarios;
+## a.- Agregar nombre de amigos a una lista-Array.;
+- El usuario puede escribir los nombres de sus amigos, en el campo texto y agregarlo a la lista con el "Botón Agregar".
+- Sí el campo está vacío el programa muestra un mensaje pidiendo que ingrese un nombre válido.
+
+## b.- Visualizar la lista.;
+- Cada nombre de amigo ingresado se muestra en una lista debajo del campo de entrada.
+
+## c.- Sortear amigo.;
+- Al presionar Clic en el botón "Sortear Amigo", la aplicación selecciona un nombre aleatorio de la lista y lo muestra como amigo sorteado.
+- Sí la lista está vacía, se muestra una alerta indicando que no hay nombres para sortear.
+
 
 1.- 
 
