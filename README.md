@@ -2,10 +2,6 @@
 
 <em> ## Descripción de su proyecto: Challenge Amigo secreto </em>
 
-
-b.- Visualizar los nombres ingresados de la lista.
-c.- Al realizar el sorteo, se genera un numero aleatorio y este elige el amigo sorteado, mostrándolo en la pantalla.
-
 ## Funcionalidades
 
 ## a.- Agregar nombre de amigos a una lista-Array.;
@@ -18,6 +14,11 @@ c.- Al realizar el sorteo, se genera un numero aleatorio y este elige el amigo s
 ## c.- Sortear amigo.;
 - Al presionar Clic en el botón "Sortear Amigo", la aplicación selecciona un nombre aleatorio de la lista y lo muestra como amigo sorteado.
 - Sí la lista está vacía, se muestra una alerta indicando que no hay nombres para sortear.
+
+## Tecnologías Utilizadas.
+**HTML5: ** Como estructura de la página.
+**CSS3: ** Para el diseño responsivo de la aplicación.
+** JavaScript: ** Para la lógica del proyecto donde se incluye la manipulación del DOM,  el orden del amigo y las validaciones.
 
 
 1.- 
