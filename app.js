@@ -9,23 +9,34 @@ function TituloPagina(elemento, texto){
 //input; Para Digitar/Validar Nombre y Boton añadir(amigo).
 function agregarAmigo(){
     let Amigo=document.getElementById('amigo');
-    let nombreAmigo = Amigo.value.trim();   
+    let nombreAmigo = Amigo.value.trim();  
     console.log(nombreAmigo);
-    if (nombreAmigo ==="") {
+    if (nombreAmigo == "") {
         alert("Por favor, ingrese un nombre valido.");}
     else {
+        for (let i=0; i < tablaAmigos.length; i++){
+            if (nombreAmigo == tablaAmigos[i]){
+                alert('Ya ha escrito ese nombre.');
+                Amigo.value="";
+                Amigo.focus();    
+                return;
+            }            
+        }
         tablaAmigos.push(nombreAmigo);
         agreganEnLista();
     }
     Amigo.value="";
-    Amigo.focus();
+    Amigo.focus();    
     return;
 }
 
 //listaAmigos; amigos ingresando/creando la lista.
 function agreganEnLista(){
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML="";
+    lista.innerHTML = "";
+    //for (let i=0; i < tablaAmigos.length; i++){
+    //    lista.innerHTML=tablaAmigos[i];
+    //}
     tablaAmigos.forEach(nombreAmigo => {
         const li = document.createElement("li");        
         li.textContent = nombreAmigo;
@@ -43,11 +54,16 @@ function sortearAmigo() {
         const elegido = document.getElementById("resultado");
         console.log("aleatorio",aleatorio);
         console.log("sorteado:",sorteado);        
-        console.log("elegido",elegido);        
-        elegido.innerHTML = sorteado;
+        console.log("elegido",elegido);              
+        limpiartabla();
+        console.log("tablaAmigos:",tablaAmigos);
         elegido.innerHTML = `<li>Amigo Secreto sorteado es: ${sorteado}<li/>`;
         }
     return;
+}
+
+function limpiartabla(){
+    document.getElementById('listaAmigos').value='';
 }
 
 TituloPagina('h1','Amigo Secreto.');
