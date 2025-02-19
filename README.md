@@ -16,6 +16,7 @@ Esta aplicación Web, permite ingresar amigos y elegir cuál de ellos fue sortea
 ## c.- Sortear amigo.
 - Al presionar Clic en el botón "Sortear Amigo", la aplicación selecciona un nombre aleatorio de la lista y lo muestra como amigo sorteado.
 - Sí la lista está vacía, se muestra una alerta indicando que no hay nombres para sortear.
+- Sí la lista esta llena de daots/amigos, se borra todo el contenido HTML de la etiqueta <ul>.
 
 ## Tecnologías Utilizadas.
 **HTML5: ** Como estructura de la página.
