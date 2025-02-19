@@ -1,16 +1,17 @@
 <h1 align="center"> Challenge Amigo secreto </h1>
 
 <em> ## Descripción de su proyecto:</em>
-Esta aplicaciòn WEb, permite ingresar amigos, y elegir cual de ellos a sido sorteado.
+Esta aplicación Web, permite ingresar amigos y elegir cuál de ellos fue sorteado.
 
 ## Funcionalidades
 
-## a.- Agregar nombre de amigos a una lista-Array.
-- El usuario puede escribir los nombres de sus amigos, en el campo texto y agregarlo a la lista con el "Botón Agregar".
-- Sí el campo está vacío el programa muestra un mensaje pidiendo que ingrese un nombre válido.
+## a.- Agregar nombre de amigos a una lista.
+- El usuario puede ingresar los nombres de sus amigos, en el campo texto y agregarlo a la lista con el "Botón Añadir".
+- Sí el campo está vacío el programa muestra un mensaje solicitándole que ingrese un nombre válido.
+- Sí ingreso una vez el nombre del amigo, este no puede ser duplicado, mostrando una alerta que ese nombre ya existe.
 
 ## b.- Visualizar la lista.
-- Cada nombre de amigo ingresado se muestra en una lista debajo del campo de entrada.
+- Cada nombre de amigo ingresado se muestra en una lista debajo del texto ingresado.
 
 ## c.- Sortear amigo.
 - Al presionar Clic en el botón "Sortear Amigo", la aplicación selecciona un nombre aleatorio de la lista y lo muestra como amigo sorteado.
@@ -19,92 +20,64 @@ Esta aplicaciòn WEb, permite ingresar amigos, y elegir cual de ellos a sido sor
 ## Tecnologías Utilizadas.
 **HTML5: ** Como estructura de la página.
 **CSS3: ** Para el diseño responsivo de la aplicación.
-** JavaScript: ** Para la lógica del proyecto donde se incluye la manipulación del DOM,  el orden del amigo y las validaciones.
+** JavaScript: ** Para la lógica del proyecto donde se incluye la manipulación del DOM, el orden del amigo y las validaciones.
 
 ## Estructura del Proyecto.
-challenge-amigo-secreto_esp-main
- app.js      Archivo JavaScript para la lógica del proyecto.
- index.html  Archivo de la estructura de la aplicación.
- README.md   Documentación del proyecto.
+Carpeta: challenge-amigo-secreto_esp-main
+ - app.js      Archivo JavaScript para la lógica del proyecto.
+- index.html  Archivo de la estructura de la aplicación.
+- README.md   Documentación del proyecto.
 
-## Trabajando con Git Hub Challeguer amigo secreto para el repositorio y versiones.
+
+## Trabajando con Git Hub Challeguer amigo secreto
+## Con versiones en mí PC-Local.
 0.- Ejecuto el Git Bash
-
-1.- Me dirijo a la carpeta que esta mi repositorio.
+1.- Me dirijo a la carpeta que esta mi repositorio PC-Local.
     $ pwd
       /d/1__Alura/challenge-amigo-secreto_esp-main
-
 2.- Ver en que estado esta mi repositorio local.
     $ git status
        fatal: not a git repository (or any of the parent directories): .git
-    $ ls
-       app.js  assets/  index.html  style.css
-
-3.- Para iniciar mi repositorio LOCAL. (Comienza a rrastrear todos los archivos que yo tengo en esta carpeta).
+3.- Para iniciar mi repositorio LOCAL. (Comienza a rastrear todos los archivos que yo tengo en esta carpeta).
     $ git init
-       Initialized empty Git repository in D:/1__Alura/challenge-amigo-secreto_esp-main/.git/
-
-4.- Estos archivos no se han adicionado al Git Hut.
-     $ git init
-       On branch master
-       No commits yet
-       Untracked files:
-         (use "git add <file>..." to include in what will be committed)
-               app.js
-               assets/
-               index.html
-               style.css
-       nothing added to commit but untracked files present (use "git add" to track)
-
-5.- Adicionando cada aarchivo al Git Hut.
+4.- Adicionando cada archivo al Git Hut.
     $ git add app.js
     $ git add assets/
     $ git add index.html
     $ git add style.css
-
-6.- Me dice que ya están los archivos adicionados, me pide un commit para guardar los cambios.
+5.- Me dice que ya están los archivos adicionados, me pide un commit para guardar los cambios.
     $ git status
-       On branch master
-       No commits yet
-       Changes to be committed:
-         (use "git rm --cached <file>..." to unstage)
-               new file:   app.js
-               new file:   assets/amigo-secreto.png
-               new file:   assets/play_circle_outline.png
-               new file:   index.html
-               new file:   style.css
-
 7.- Me voy a Vs Code, y realizo una modificación. Y lo grabo ^+s
-    function sortearAmigo() {
-        if (tablaAmigos.length === 0){
-            alert("No hay amigos ingresados para sortear.");}
-        else {
-
 8.- En el Visual Studio Code:
-    Indica que tengo Commit pendiente que no é realizado. Ingreso nombre de la moficación que realice. Se guardará como une versión modificada.
-
+    Indica tengo que realizar Commit pendiente que no é realizado. 
+    Ingreso el nombre de la modificación que realice. Se guardará como una versión modificada.
 9.- También lo puedo realizar desde el terminal del Visual Studio Code.
- 
-10.- Lo del punto 6.- Me dice que ya están los archivos adicionados, me pide un commit para guardar los cambios.
-     $ git status
-        On branch master
-        Changes not staged for commit:
-          (use "git add <file>..." to update what will be committed)
-          (use "git restore <file>..." to discard changes in working directory)
-                modified:   app.js
-        no changes added to commit (use "git add" and/or "git commit -a")
-
-11.- Actualizo desde el Git Bash.
+10.- Actualizando desde el Git Bash.
     	$ git add app.js		o   git add .
     	$ get status 
+11.- Realizando Commit.
+     $ git commit -am 'modificando comentarios'
+[master 426904b] modificando comentarios
+1 file changed, 1 insertion(+), 6 deletions(-)
 
-12.- Realizando Commit.
-	    $ git commit -am 'modificando comentarios'
-        [master 426904b] modificando comentarios
-         1 file changed, 1 insertion(+), 6 deletions(-)
+## Envío desde mi repositorio local(Mi PC), hacia mi repositorio Remoto GIT HUB.
+12.- Creo en mi Git Hub un repositorio llamado: challenge-amigo-secreto_esp-main
 
-## Asesoria.
-De la aplicación Scord y utilización del FORO, que nos atienden los expertos de Alura ONE Studen Oracle.
+13.- Vinculo mi repositorio Local con mi Git Hub remoto.
+$ git remote add origin https://github.com/wilderjorgezegarra/challenge-amigo-secreto_esp-main.git
+
+Constatamos con:
+$ git remote
+	origin
+
+14.- Como envío mi repositorio local(de Mi PC), HACIA mi repositorio Remoto Git Hot.
+	$ git branch -M main
+$ git push -u origin main
+
+
+## Asesoría.
+De la aplicación Discord y preguntas en el FORO de Alura Latam ONE Student Oracle, que nos orientan bien.
  
 ## Persona que Desarrolla el Proyecto
-Alumno de Alura Latam G8. Wilder, JORGE ZEGARRA
+Alumno de Alura Latam G8: Wilder, JORGE ZEGARRA
+
