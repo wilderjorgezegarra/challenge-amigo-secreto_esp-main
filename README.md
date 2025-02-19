@@ -3,7 +3,7 @@
 ## Descripción de su proyecto:
 Esta aplicación Web, permite ingresar amigos y elegir cuál de ellos fue sorteado.
 
-## Funcionalidades
+## Funcionalidades:
 
 ## a.- Agregar nombre de amigos a una lista.
 - El usuario puede ingresar los nombres de sus amigos, en el campo texto y agregarlo a la lista con el "Botón Añadir".
@@ -30,7 +30,7 @@ Carpeta: challenge-amigo-secreto_esp-main
 - README.md   Documentación del proyecto.
 
 
-## Trabajando con Git Hub Challeguer amigo secreto
+## Trabajando con Git Hub Challeguer amigo secreto:
 ## Con versiones en mí PC-Local.
 0.- Ejecuto el Git Bash
 1.- Me dirijo a la carpeta que esta mi repositorio PC-Local.
