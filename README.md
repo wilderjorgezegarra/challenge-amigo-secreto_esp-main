@@ -31,7 +31,7 @@ Carpeta: challenge-amigo-secreto_esp-main
 
 
 ## Trabajando con Git Hub Challeguer amigo secreto:
-## Con versiones en mí PC-Local.
+## Uso de versiones en mí PC-Local.
 <p> 0.- Ejecuto el Git Bash </p>
 <p> 1.- Me dirijo a la carpeta que esta mi repositorio PC-Local.</p>
     $ pwd
