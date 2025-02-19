@@ -1,6 +1,6 @@
 <h1 align="center"> Challenge Amigo secreto </h1>
 
-<em> ## Descripción de su proyecto:</em>
+<em> Descripción de su proyecto:</em>
 Esta aplicación Web, permite ingresar amigos y elegir cuál de ellos fue sorteado.
 
 ## Funcionalidades
