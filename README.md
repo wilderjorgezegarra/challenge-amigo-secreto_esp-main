@@ -16,7 +16,7 @@ Esta aplicación Web, permite ingresar amigos y elegir cuál de ellos fue sortea
 ## c.- Sortear amigo.
 - Al presionar Clic en el botón "Sortear Amigo", la aplicación selecciona un nombre aleatorio de la lista y lo muestra como amigo sorteado.
 - Sí la lista está vacía, se muestra una alerta indicando que no hay nombres para sortear.
-- Sí la lista esta llena de daots/amigos, se borra todo el contenido HTML de la etiqueta <ul>.
+- Sí la lista está llena de datos/amigos, se borra todo el contenido HTML de la etiqueta <ul>.
 
 ## Tecnologías Utilizadas.
 **HTML5: ** Como estructura de la página.
@@ -36,7 +36,7 @@ Carpeta: challenge-amigo-secreto_esp-main
 <p> 1.- Me dirijo a la carpeta que esta mi repositorio PC-Local.</p>
     $ pwd
       /d/1__Alura/challenge-amigo-secreto_esp-main
-2.- Ver en que estado esta mi repositorio local.
+2.- Ver en qué estado está mi repositorio local.
     $ git status
        fatal: not a git repository (or any of the parent directories): .git
 3.- Para iniciar mi repositorio LOCAL. (Comienza a rastrear todos los archivos que yo tengo en esta carpeta).
