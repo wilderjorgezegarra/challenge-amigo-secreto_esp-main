@@ -54,16 +54,11 @@ function sortearAmigo() {
         const elegido = document.getElementById("resultado");
         console.log("aleatorio",aleatorio);
         console.log("sorteado:",sorteado);        
-        console.log("elegido",elegido);              
-        limpiartabla();
-        console.log("tablaAmigos:",tablaAmigos);
+        console.log("elegido",elegido);
+        document.querySelector('ul').innerHTML='';
         elegido.innerHTML = `<li>Amigo Secreto sorteado es: ${sorteado}<li/>`;
         }
     return;
-}
-
-function limpiartabla(){
-    document.getElementById('listaAmigos').value='';
 }
 
 TituloPagina('h1','Amigo Secreto.');
